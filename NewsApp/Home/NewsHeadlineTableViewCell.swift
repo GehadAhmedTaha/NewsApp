@@ -19,12 +19,12 @@ class NewsHeadlineTableViewCell: UITableViewCell {
   override func awakeFromNib() {
     super.awakeFromNib()
     
-    if let borderWidth = Bundle.main.object(forInfoDictionaryKey: "cellBorderWidth") as? CGFloat  {
+    if let borderWidth = Bundle.main.object(forInfoDictionaryKey: "borderWidth") as? CGFloat  {
       self.layer.borderWidth = borderWidth
       self.articleImageView.layer.borderWidth = borderWidth
     }
     
-    if let cornerRadius = Bundle.main.object(forInfoDictionaryKey: "cellCornerRadius") as? CGFloat  {
+    if let cornerRadius = Bundle.main.object(forInfoDictionaryKey: "cornerRadius") as? CGFloat  {
       self.layer.cornerRadius = cornerRadius
       self.articleImageView.layer.cornerRadius = cornerRadius
       self.layer.borderColor = UIColor.lightGray.cgColor

@@ -8,7 +8,7 @@
 import Foundation
 class NewsAPI {
   
-  private static let API_KEY = "b25a2a8f5f0b4d238a4f6a1ba95c7470"
+  private static let API_KEY = "7d74b91d40074539b5fd319102028c9c"
   private static let baseUrl = "https://newsapi.org/v2/"
   private static var page = 1
   static var searchCurrentPage = 1

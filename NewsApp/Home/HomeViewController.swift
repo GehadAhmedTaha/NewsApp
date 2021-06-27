@@ -114,7 +114,10 @@ extension HomeViewController:  UITableViewDelegate, UITableViewDataSource {
   }
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    let detailsVC =  NewsDetailsViewController()
+    guard let article = presenter?.data[indexPath.section] else {return}
+    let detailsVC =  NewsDetailsViewController(nibName:"NewsDetailsViewController", bundle: nil)
+    detailsVC.article = article
+    self.navigationController?.pushViewController(detailsVC, animated: true)
   }
   
   
